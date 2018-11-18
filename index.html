@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Momentum API</title>
+			<style>
+				#title{text-align:center;
+                color:rgb(255,0,0);
+                }
+                
+                h3{color:rgb(0,0,255);
+                text-align:center;
+                font-size:200%;
+                }
+                
+                h2{color:rgb(128,0,128);
+                text-align:center;
+                font-size:200%;
+                }
+                
+              	p{
+                width:50%;
+                text-align:center;
+                font-size:160%;
+                
+                }
+                
+                #contsyntax{
+                width:75%;
+                text-align:center;
+                font-size:160%;
+                color:rgb(255,0,0);
+                }
+                
+                h4{
+                font-size:160%;
+                color:rgb(0,150,255);
+                
+                }
+                
+                a{
+                font-size:160%;
+                
+                }
+                
+                h5{
+                font-size:150%;
+                color:rgb(255,0,255);
+                
+                }
+                
+               
+			</style>
+		</head>
+		<body>
+
+			<div id = "title">
+            <h1 style="font-size:300%;">The Momentum Programming Language</h1>
+          	</div>
+          	<h3>The first computer programming language created with the sole purpose of introducing coding to beginners</h3>
+            <div ALIGN = CENTER>
+
+            <h2>Contents</h2>
+            <a href = "#Intro">Introduction to Momentum</a><br>
+            <a href = "#Basic">The basics of Momentum</a><br>
+            <a href = "#Container">How to use containers</a><br>
+            <a href = "#Print">How to Print</a><br>
+            <a href = "#If">How to use If structures</a><br>
+            <a href = "#Change">How to use Change Structures</a><br>
+            <a href = "#Loop">How to do Loops</a><br>
+            <a href = "#Input">How to get Input</a><br>
+            <a href = "#OOP">How to use Object Oriented Programming</a><br>
+            <h2 id = "Intro">Introduction</h2>
+			<p>Many beginner programmers have been told to begin coding with Scratch from MIT. However, after Scratch, where do beginners go from there? Python and JavaScript are very overwhelming at first, and Java and the C languages have too much object oriented structure to accomodate beginner coders. The Momentum Programming Language successfully bridges this gap between block/drag and drop coding and complex programming. </p>
+            </div>
+            <h2 id = "Basic">Momentum: The Basics</h2>
+            <div ALIGN = CENTER>
+            <p>Like Java, Momentum also uses a ending character at the end of each piece of code. In Java, the coder puts a semicolon, but in Momentum, we use a smiley face, ":)". The base syntax in Momentum is that every single line of code starts with 4(add input and loops) specific words: <br>-Container: a container that can hold text, numbers, characters, etc.<br>-If statements: used when the coder wants to run certain lines of code only if a condition is true<br>-Loop: used when the coder wants to repeat certain lines of code until a certain condition is false<br>-Print: used to print text to the command line</p>
+           	
+            <h2 id = "Container">The Container Tag</h2>
+            <p>Containers have the following syntax <br><br> 
+            Container DATATYPE name = value :)<br><br> 
+            In order to make Containers, we must specify by using the keyword Container, so this will always be Container. 
+            <br>Next is the DATATYPE, which should be in all lowercase, which can be any of the following: 
+            <br><br>-number: represents a number, integer or decimal<br>-cond:represents either true or false
+            <br>-text:represents English words and characters<br>-letter:represents a letter in the English alphabet
+            <br><br>Next is the name, which is what you want to call the Container.
+            <br>The equal sign sets whatever is on the left hand side to whatever is on the right hand side.
+            <br>The value is what the Container should store.
+            <br><br>Example container creations:<br><br>
+            Container number num1 = 3 :)
+            <br>Container number num2 = 3.4 :)
+            <br>Container text str = "hello" :)
+            <br>Container letter char = 'a' :)
+            <br>Container cond bool = true :)</p>
+            
+            <h2 id = "Print">The Print Tag</h2>
+			<p>
+            The print tag is used to print text to the command line.
+            <br>The print structure syntax is as follows:
+            <br><br> Print TEXTCONTAINERNAME :) OR Print "TextToBePrinted" :)
+            <br><br> As before, Print must start the line in order to signify that the print structure is being used.
+            <br>The text to be printed can either be stored inside the container 
+            <br> Then, the smiley face is used to end the statement.
+            <br> Examples of the Print structure:
+            <br><br>Container text str = "Example text container":)
+            <br>Print str:)
+            <br>These lines of code will print "Example text container"
+            <br><br>Container 
+            
+            
+            
+            
+            </p>
+            
+            <h2 id = "If">The If Tag</h2>
+            <p>If statements are used when the coder wants to run certain lines of code when a condition is true.
+            <br>The if statement syntax in Momentum goes as such:
+            <br><br>If condition {<br>statement:)<br>}:)
+            <br>The If must start the line to signify the if structure.
+            <br>The condition can be a container of type cond or just a bare cond expression, such as 3>4.
+            <br>The brackets signify the start of the code to be run assuming the condition is true.
+            <br> The statement is the code to be run when the cond is true.
+            <br>Here are some examples of If structures.
+            <br><br>if 4>3 {<br> Print "This will print":)<br>}:)
+            <br>if 3>4 {<br>Print "This will not print":)<br>}:)
+            
+            
+            
+            </p>
+            
+            <h2 id = "Change">The Change Tag</h2>
+            <p>The change structure is the most complex of all of the structures, having different capabilities for each data structure.
+            <br>The syntax is as follows:
+            <br><br> Change CONTAINERNAME OPERATOR PARAM:)
+            <br><br>Change is necessary, as that is the structure.
+            <br>Containername is the name of the container.
+            <br>The Container being changed's type is crucial to the operators available to be called. See below chart.
+            </p>
+            <h5>One important thing to know is that the param can never be a container, only a hard coded value.</h5>
+            
+            <h4>Change with texts</h4>
+            <p>
+            When the Container being changed is a text, the available operators are += and =.
+            <br><br>- +=: This operator with text will attach both texts together.
+            <br>Example: Container text str = "Water":)
+            <br>Change str += "Bottle":)
+            <br>Now str holds a text:"WaterBottle"
+            
+            <br><br>- =: This operater with text will put the text parameter into the text container.
+            <br>Example: Container text str = "thiswontexistsoon":)
+            <br>Change str = "newtext":)
+            <br>Now str holds the text "newtext"
+            
+            </p>
+            
+            <h4>Change with numbers</h4>
+            <p>
+            Numbers have the most operators by far, as when the containor is a number, the operators available are =, +=, -=, *=, /=.
+            <br><br>- =: This operator with numbers will put the number parameter in to the number containor being changed.
+            <br>Example: Container number num = 3:)
+            <br>Change num = 7:)
+            <br> Now num holds 7.
+            
+            <br><br>- +=: This operator will add the number parameter to the number container.
+            <br>Example: Container number num = 3;
+            <br>Change num += 6:)
+            <br>Now, num has 9, which is 3 + 6.
+            
+			<br><br>- -=: This operator will subtract the number parameter from the number container.
+            <br>Example: Container number num = 3;
+            <br>Change num -= 6:)
+            <br>Now, num has -3, which is 3 - 6.            
+            
+            <br><br>- *=: This operator will multiply the number parameter to the number container.
+            <br>Example: Container number num = 3;
+            <br>Change num *= 6:)
+            <br>Now, num has 27, which is 3 * 6.
+            
+            <br><br>- /=: This operator will divide the number parameter by the number container.
+            <br>Example: Container number num = 3;
+            <br>Change num /= 6:)
+            <br>Now, num has .5, which is 3 / 6.
+            
+            </p>
+            
+            <h4>Change with conds</h4>
+            <p>
+            Conditions only have one operator, which is =.
+            
+            <br><br>- =: Sets the container being changed to the param cond.
+            <br>Example: Container cond bool = true:)
+            <br>Change bool = false:)
+            <br>Now bool is false.
+            
+            </p>
+            
+            <h4>Change with letters</h4>
+            <p>
+            Letters are very similar to conditions in the sense that they only have one operator, the = operator.
+            
+            <br><br>- =: Sets the letter container equal to the letter param.
+            <br>Example: Container letter grade = 'a':)
+            <br>Change grade = 'b':)
+            <br>Now grade holds the letter b.
+            
+            
+            </p>
+            
+            
+            
+            
+            
+            
+            </p>
+            
+            
+            <h2 id = "Loop">The	Loop Tag </h2>
+            <p>Yet to be implemented</p>
+            <h2 id = "Input">The Input Tag</h2>
+            <p>Yet to be implemented</p>
+            <h2 id = "OOP">Object Oriented Programming</h2>
+            
+            </div>
+
+
+
+</body>
+</html>
